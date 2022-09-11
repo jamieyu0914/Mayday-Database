@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title></title>
+<script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<style>
+
+  .center {
+    margin-left:auto;
+    margin-right:auto;
+    width:35%;
+    border-color:white;
+    font-size:20px; }
+
+  #incenter {
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:60px;
+    width:35%;
+    border-color:white;
+    border-style:solid;
+    font-size:16px;
+    background-image:url(.gif);}
+
+  table.center {
+     margin-left:auto;
+     margin-right:auto;
+     width:90%;
+     border-style:none; }
+
+  a:hover {color:#00FFFF; text-decoration:none;} 
+
+  #myH1 {text-align:center; color:black;}
+
+  .tableTitle {
+     background-color:black;
+     color:white;
+     text-align:center; }
+
+  .tableExample {
+     border-color:black;
+     border-style:solid;
+     border-width:1px;}
+
+  a {text-decoration:none; color:#FF0088; font-size:11px;text-align:center;}
+
+  .td { text-indent:32px; line-height:20px; line-height:22px;}
+
+</style>
+<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js'></script>
+</head>
+
+<div class="center">
+  <h1 id="myH1"><font face="Fixedsys"> <font face="微軟正黑體">專輯資訊<a href="javascript:history.back()"></a></font></h1>
+
+</div>
+
+<hr/>
+
+<table border="3" width="100%" height="100%"/>
+<tr>
+<td  style="text-align:center"><font face="微軟正黑體"><h4>五月天第一張創作專輯</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/NQxx5jTL5w8-0Ev0F8es008l-index.html"><img src="album/001.jpg" width="200"height="300"/></a></td>
+
+<td  style="text-align:center"><font face="微軟正黑體"><h4>愛情萬歲</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/opztMoDxU93GIuc0FAyy008l-index.html"><img src="album/002.jpg" width="200"height="300"/></a></td>
+    
+<td  style="text-align:center"><font face="微軟正黑體"><h4>人生海海</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/c7JuBBNS7Tr6rz00F8fa008l-index.html"><img src="album/003.jpg" width="200"height="300"/></a></td>
+    
+<td  style="text-align:center"><font face="微軟正黑體"><h4>時光機</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/AO3gHhevRUR5Gz80FBdm008l-index.html"><img src="album/004.jpg" width="200"height="300"/></a></td>
+</tr>
+<tr>
+<td  style="text-align:center"><font face="微軟正黑體"><h4>神的孩子都在跳舞</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/Fn466x4n7XzSHL.0FCyW008l-index.html"><img src="album/005.jpg" width="200"height="300"/></a></td>
+    
+<td  style="text-align:center"><font face="微軟正黑體"><h4>為愛而生</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/JcH8E8WBdaey.fi0FKYU008l-index.html"><img src="album/006.jpg" width="200"height="300"/></a></td>
+    
+<td  style="text-align:center"><font face="微軟正黑體"><h4>後青春期的詩</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/jVaDUZ0lAyKmK1r0FR9P008l-index.html"><img src="album/007.jpg" width="200"height="300"/></a></td>
+    
+<td  style="text-align:center"><font face="微軟正黑體"><h4>第二人生（明日版 Now Here／末日版 No Where）</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/7ISbg6jfRdB3PT0F1BjI0091-index.html"><img src="album/008.jpg" width="200"height="300"/></a></td>
+</tr>
+<tr>
+<td  style="text-align:center"><font face="微軟正黑體"><h4>自傳 (history of Tomorrow)</h4></td>
+<td  style="text-align:center"><a href = "https://www.kkbox.com/tw/tc/album/LkYUjLWHR0ueKJ0FvKA30091-index.html"><img src="album/009.jpg" width="200"height="300"/></a></td>
+   
+</tr>
+
+
+<script language="JavaScript">
+function ShowTime(){
+　document.getElementById('showbox').innerHTML = new Date();
+　setTimeout('ShowTime()',1000);
+}
+</script>
+<body onload="ShowTime()">
+<center><div id="showbox"></div></center>
+
+
+<!-- 回到頂端 start -->
+<script>
+//<![CDATA[
+(function () {
+$("body").append("<img id='goTopButton' style='display: none; z-index: 5; cursor: pointer;' title='回到頂端'/>");
+var img = "album/back.png",
+locatioin = 1/2, 
+right = 10, 
+opacity = 0.9, 
+speed = 500, 
+$button = $("#goTopButton"),
+$body = $(document),
+$win = $(window);
+$button.attr("src", img);
+$button.on({
+mouseover: function() {$button.css("opacity", 1);},
+mouseout: function() {$button.css("opacity", opacity);},
+click: function() {$("html, body").animate({scrollTop: 0}, speed);}
+});
+window.goTopMove = function () {
+var scrollH = $body.scrollTop(),
+winH = $win.height(),
+css = {"top": winH * locatioin + "px", "position": "fixed", "right": right, "opacity": opacity};
+if(scrollH > 20) {
+$button.css(css);
+$button.fadeIn("slow");
+} else {
+$button.fadeOut("slow");
+}
+};
+$win.on({
+scroll: function() {goTopMove();},
+resize: function() {goTopMove();}
+});
+} )();
+//]]>
+</script>
+<!-- 回到頂端按鈕 end, Design by WFU BLOG -->
+</body>
+</html>

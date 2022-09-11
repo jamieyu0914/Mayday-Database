@@ -1,0 +1,54 @@
+html,body{
+	margin:0px;
+	padding:0px;
+}
+h1 {
+	text-align: center;
+	color: white;
+	text-shadow: 2px 2px 8px #0a0a0a;
+}
+.elegant-aero {
+	margin-left:auto;
+	margin-right:auto;
+	max-width: 560px;
+	background: #639CED;
+	padding: 20px 20px 20px 20px;
+	color: #cec2c2;
+}
+.elegant-aero h1>span {
+	display: block;
+	font-size: 11px;
+}
+
+.elegant-aero label>span {
+	float: left;
+	margin-top: 10px;
+	color: #5E5E5E;
+}
+.elegant-aero label {
+	display: block;
+	margin: 0px 0px 5px;
+}
+.elegant-aero label>span {
+	float: left;
+	width: 20%;
+	text-align: right;
+	padding-right: 15px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.elegant-aero input[type="text"], .elegant-aero textarea {
+	color: #888;
+	width: 70%;
+	padding: 0px 0px 0px 5px;
+	border: 1px solid #C5E2FF;
+	background: #FBFBFB;
+	outline: 0;
+	height: 30px;
+	line-height:15px;
+	margin: 2px 6px 16px 0px;
+}
+.elegant-aero textarea{
+	height:100px;
+	padding: 5px 0px 0px 5px;
+}
